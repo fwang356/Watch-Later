@@ -1,0 +1,17 @@
+{
+    "manifest_version" : 3,
+    "name" : "Chrome playback speed controller",
+    "description" : "Controls the playback speed of your youtube or udemy video",
+    "version" : "1.0",
+    "author" : "Felix Wang",
+
+    "content_scripts": [
+        {
+            "matches": ["*://www.youtube.com/*"],
+            "js" : ["youtube.js"]
+        }
+    ],
+    "permissions" : [
+        "activeTab", "tabs"
+    ]
+}
